@@ -3,67 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Shop elegant everyday and occasion jewellery at Shah Jewellery.">
-<title>Shah Jewellery | Elegance in Every Detail</title>
+<title>Shah Jewellery | Elegant Everyday Jewellery</title>
 <style>
-:root{--cream:#F4E8D3;--brown:#4a2e1f;--gold:#8A5A24;--ink:#241810;--soft:#fffaf1}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--soft);color:var(--ink)}
-a{color:inherit;text-decoration:none}button,input,select{font:inherit}.announcement{background:var(--brown);color:#fff4df;text-align:center;padding:9px 12px;font-size:12px;letter-spacing:1px}
-header{background:var(--cream);border-bottom:1px solid #ddc9a8;position:sticky;top:0;z-index:5}.nav{max-width:1180px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{font-family:Georgia,serif;font-size:25px;letter-spacing:1px;color:var(--brown)}.brand small{display:block;font:10px Arial,sans-serif;letter-spacing:4px;text-align:center;margin-top:4px;color:var(--gold)}.navlinks{display:flex;gap:20px;font-size:13px}.cart-button,.btn{border:0;background:var(--brown);color:white;padding:12px 17px;border-radius:3px;cursor:pointer}.hero{background:linear-gradient(120deg,rgba(36,24,16,.88),rgba(74,46,31,.62)),url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1800&q=85') center/cover;min-height:440px;display:flex;align-items:center;color:white}.hero-inner{max-width:1180px;margin:auto;padding:60px 24px;width:100%}.eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#ead2a7}.hero h1{font:clamp(38px,6vw,68px) Georgia,serif;max-width:620px;line-height:1.05;margin:17px 0}.hero p{max-width:450px;line-height:1.7;color:#f6e9d6}.btn-light{display:inline-block;background:var(--cream);color:var(--brown);padding:14px 22px;margin-top:12px;font-size:13px;letter-spacing:.5px}.section{max-width:1180px;margin:auto;padding:55px 20px}.section-heading{text-align:center;margin-bottom:30px}.section-heading .eyebrow{color:var(--gold)}h2{font:clamp(27px,4vw,38px) Georgia,serif;color:var(--brown);margin:10px 0}.section-heading p{color:#786654;font-size:14px}.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:30px}.category{padding:22px;background:var(--cream);text-align:center;border:1px solid #e4d1b2}.category strong{font:20px Georgia,serif;color:var(--brown)}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.product{background:white;border:1px solid #eadfce;overflow:hidden}.product img{width:100%;aspect-ratio:4/4.5;object-fit:cover;background:var(--cream);display:block}.product-info{padding:14px}.product h3{font:18px Georgia,serif;margin:0 0 7px;color:var(--brown)}.product p{font-size:12px;color:#806e5c;min-height:30px;margin:0 0 12px}.price{font-weight:bold;color:var(--gold);margin-bottom:12px}.product .btn{width:100%;padding:11px;font-size:12px}.note{background:var(--cream);padding:34px 22px;text-align:center;border:1px solid #e2cfaf}.note p{max-width:650px;margin:12px auto;color:#6b5643;line-height:1.7;font-size:14px}.footer{background:var(--brown);color:#f7ead5;padding:35px 20px;text-align:center}.footer .brand{color:#f7ead5}.footer p{font-size:12px;color:#e0c9a8;line-height:1.8}.footer-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;font-size:12px;margin:18px 0}.overlay{display:none;position:fixed;inset:0;background:#0008;z-index:10;justify-content:flex-end}.overlay.show{display:flex}.drawer{background:var(--soft);width:min(440px,100%);height:100%;padding:22px;overflow:auto}.drawer-head{display:flex;justify-content:space-between;align-items:center}.drawer h2{font-size:28px}.close{border:0;background:transparent;font-size:27px;cursor:pointer}.cart-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #e2d4c0;padding:14px 0;font-size:14px}.qty{display:flex;align-items:center;gap:9px;margin-top:8px}.qty button{border:1px solid #d9c6a8;background:white;padding:3px 9px;cursor:pointer}.total{display:flex;justify-content:space-between;font-weight:bold;padding:18px 0}.checkout label{display:block;font-size:12px;margin:12px 0 5px}.checkout input,.checkout textarea{width:100%;padding:11px;border:1px solid #d9c6a8;background:white;border-radius:2px}.checkout .btn{width:100%;margin-top:14px}.small{font-size:11px;color:#7a6753;line-height:1.6}.empty{padding:25px 0;color:#796956}
-@media(max-width:800px){.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.navlinks{display:none}.hero{min-height:390px}.categories{gap:8px}.category{padding:16px 6px}.category strong{font-size:16px}.section{padding:42px 14px}.product-info{padding:11px}.product h3{font-size:16px}}
-@media(max-width:380px){.brand{font-size:21px}.cart-button{padding:10px}.products{gap:8px}}
+*{box-sizing:border-box}
+body{margin:0;background:#F4E8D3;color:#3E291B;font-family:Arial,sans-serif}
+header{background:#241710;color:#F4E8D3;text-align:center;padding:25px 15px}
+.logo{font-family:Georgia,serif;font-size:34px;color:#D9B578;letter-spacing:2px}
+header p{font-size:12px;letter-spacing:3px;margin-bottom:0}
+nav{background:#3B281C;padding:13px;text-align:center}
+nav a{color:#F4E8D3;text-decoration:none;margin:0 12px;font-size:14px}
+.hero{text-align:center;padding:48px 18px;background:linear-gradient(135deg,#E8D3B2,#F8F0E3)}
+.hero h1{font-family:Georgia,serif;font-size:36px;font-weight:normal;margin:0 0 12px}
+.hero p{line-height:1.7}
+.btn{display:inline-block;background:#6F4829;color:white;text-decoration:none;padding:12px 20px;border-radius:3px;margin-top:12px}
+h2{text-align:center;font-family:Georgia,serif;font-weight:normal;font-size:29px;margin:35px 0 22px}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:0 16px 35px;max-width:1000px;margin:auto}
+.product{background:#FFF9F0;border:1px solid #D7BE98;text-align:center;padding:10px 10px 18px}
+.product img{width:100%;height:180px;object-fit:cover;background:#E7D7C2}
+.product h3{font-family:Georgia,serif;font-size:17px;margin:12px 0 7px}
+.price{font-weight:bold;color:#805323}
+.order{display:block;background:#6F4829;color:white;text-decoration:none;padding:10px 5px;margin-top:12px;font-size:13px}
+.about{text-align:center;padding:25px 22px 40px;line-height:1.8}
+footer{background:#241710;color:#F4E8D3;text-align:center;padding:24px 12px;font-size:13px}
+footer a{color:#D9B578}
+@media(max-width:600px){
+ .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0 10px 25px}
+ .product img{height:150px}
+ .hero h1{font-size:29px}
+ .logo{font-size:29px}
+ nav a{margin:0 7px;font-size:12px}
+}
 </style>
 </head>
 <body>
-<div class="announcement">A LITTLE SPARKLE, A LOT OF ELEGANCE ✦</div>
-<header><nav class="nav">
-<a href="#" class="brand">SHAH JEWELLERY<small>TIMELESS BEAUTY</small></a>
-<div class="navlinks"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">Our Story</a><a href="#contact">Contact</a></div>
-<button class="cart-button" onclick="openCart()">Bag (<span id="cartCount">0</span>)</button>
-</nav></header>
-<main>
-<section class="hero" id="home"><div class="hero-inner">
-<div class="eyebrow">Made to make you shine</div>
-<h1>Elegance in every detail.</h1>
-<p>Discover beautiful jewellery for everyday moments, special occasions, and everything in between.</p>
-<a class="btn-light" href="#shop">SHOP THE COLLECTION &nbsp; →</a>
-</div></section>
-<section class="section" id="shop">
-<div class="section-heading"><div class="eyebrow">The collection</div><h2>Find Your Favourite</h2><p>Little details that make every look special.</p></div>
-<div class="categories"><div class="category"><strong>✧ Earrings</strong></div><div class="category"><strong>✧ Necklaces</strong></div><div class="category"><strong>✧ Bracelets & Rings</strong></div></div>
-<div class="products" id="products"></div>
-<p class="small" style="text-align:center;margin-top:20px">Product photos and prices shown here are starter examples. Replace them with your actual stock and prices before sharing your store.</p>
+
+<header>
+  <div class="logo">SHAH JEWELLERY</div>
+  <p>YOUR BEAUTY, OUR PASSION</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#shop">Shop</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+  <h1>Elegance in Every Detail</h1>
+  <p>Discover beautiful jewellery for every mood and every occasion.</p>
+  <a class="btn" href="#shop">Explore Collection</a>
 </section>
-<section class="section" id="about"><div class="note"><div class="eyebrow">Our little story</div><h2>Jewellery that feels like you.</h2><p>At Shah Jewellery, we believe that the right little detail can make you feel extra special. Explore our collection and choose something that matches your style. Thank you for supporting our small business.</p></div></section>
-<section class="section" id="contact"><div class="section-heading"><div class="eyebrow">We’re here for you</div><h2>Need a little help?</h2><p>Questions about a product or your order? Send us a WhatsApp message and we’ll help you.</p><button class="btn" onclick="contactWhatsApp()">Chat on WhatsApp</button></div></section>
-</main>
-<footer class="footer"><div class="brand">SHAH JEWELLERY</div><p>Timeless beauty, made for you.</p><div class="footer-links"><a href="#shop">Shop</a><a href="#about">Our Story</a><a href="#contact">Contact</a><a href="https://www.instagram.com/_shah_jewellery/" target="_blank" rel="noopener">Instagram</a></div><p>© <span id="year"></span> Shah Jewellery. All rights reserved.</p></footer>
-<div class="overlay" id="overlay" onclick="outsideClose(event)"><aside class="drawer"><div class="drawer-head"><h2>Your Bag</h2><button class="close" onclick="closeCart()" aria-label="Close cart">×</button></div><div id="cartItems"></div><div class="total"><span>Total</span><span id="cartTotal">₹0</span></div><form class="checkout" onsubmit="checkoutWhatsApp(event)"><h3 style="font-family:Georgia,serif">Order details</h3><label for="customerName">Your name *</label><input id="customerName" required placeholder="Enter your name"><label for="customerPhone">Phone number *</label><input id="customerPhone" required inputmode="tel" placeholder="Your phone number"><label for="customerAddress">Delivery address *</label><textarea id="customerAddress" required rows="3" placeholder="Full delivery address"></textarea><label for="customerNote">Extra note (optional)</label><input id="customerNote" placeholder="Colour, quantity, etc."><button class="btn" type="submit">Place order on WhatsApp</button><p class="small">Your order message will open in WhatsApp for confirmation. Payment and delivery will be confirmed with Shah Jewellery.</p></form></aside></div>
+
+<h2 id="shop">Our Collection</h2>
+
+<section class="products">
+  <article class="product">
+    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=500&q=80" alt="Elegant earrings">
+    <h3>Elegant Earrings</h3>
+    <div class="price">₹99</div>
+    <a class="order" href="#" onclick="order('Elegant Earrings',99);return false">Order on WhatsApp</a>
+  </article>
+
+  <article class="product">
+    <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=500&q=80" alt="Elegant necklace">
+    <h3>Classic Necklace</h3>
+    <div class="price">₹199</div>
+    <a class="order" href="#" onclick="order('Classic Necklace',199);return false">Order on WhatsApp</a>
+  </article>
+
+  <article class="product">
+    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=500&q=80" alt="Elegant bracelet">
+    <h3>Stylish Bracelet</h3>
+    <div class="price">₹149</div>
+    <a class="order" href="#" onclick="order('Stylish Bracelet',149);return false">Order on WhatsApp</a>
+  </article>
+
+  <article class="product">
+    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=500&q=80" alt="Elegant ring">
+    <h3>Pretty Ring</h3>
+    <div class="price">₹99</div>
+    <a class="order" href="#" onclick="order('Pretty Ring',99);return false">Order on WhatsApp</a>
+  </article>
+
+  <article class="product">
+    <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=500&q=80" alt="Fashion jewellery">
+    <h3>Daily Wear Jewellery</h3>
+    <div class="price">₹179</div>
+    <a class="order" href="#" onclick="order('Daily Wear Jewellery',179);return false">Order on WhatsApp</a>
+  </article>
+
+  <article class="product">
+    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" alt="Statement necklace">
+    <h3>Statement Necklace</h3>
+    <div class="price">₹249</div>
+    <a class="order" href="#" onclick="order('Statement Necklace',249);return false">Order on WhatsApp</a>
+  </article>
+</section>
+
+<section class="about" id="about">
+  <h2>About Shah Jewellery</h2>
+  <p>Jewellery that makes every moment special.<br>
+  Thank you for supporting our small business!</p>
+</section>
+
+<footer id="contact">
+  <p>Love something? Place your order directly on WhatsApp.</p>
+  <a href="#" onclick="order('General Enquiry','');return false">Contact Us on WhatsApp</a>
+  <p>Instagram: @_shah_jewellery</p>
+  <p>© 2026 Shah Jewellery. All rights reserved.</p>
+</footer>
+
 <script>
-/* IMPORTANT: Replace the placeholder below with your WhatsApp number including country code, without + or spaces. Example India: 919876543210 */
-const WHATSAPP_NUMBER = "91XXXXXXXXXX";
-const products = [
- {id:1,name:"Golden Elegance Earrings",category:"Earrings",price:160,desc:"A graceful touch for any occasion.",img:"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80"},
- {id:2,name:"Classic Pendant Necklace",category:"Necklaces",price:250,desc:"A simple statement, every day.",img:"https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80"},
- {id:3,name:"Everyday Bracelet",category:"Bracelets",price:150,desc:"A little shine for your wrist.",img:"https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=700&q=80"},
- {id:4,name:"Chic Statement Ring",category:"Rings",price:99,desc:"Small detail, beautiful impact.",img:"https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80"},
- {id:5,name:"Pearl Charm Earrings",category:"Earrings",price:180,desc:"Soft, timeless and elegant.",img:"https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=80"},
- {id:6,name:"Layered Gold Necklace",category:"Necklaces",price:299,desc:"Made for your favourite outfits.",img:"https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80"},
- {id:7,name:"Minimal Hand Chain",category:"Bracelets",price:199,desc:"Delicate sparkle with a modern look.",img:"https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=80"},
- {id:8,name:"Golden Glow Ring",category:"Rings",price:120,desc:"Your new everyday favourite.",img:"https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=700&q=80"}
-];
-let cart = {};
-const rupees = n => "₹" + n.toLocaleString("en-IN");
-function renderProducts(){document.getElementById("products").innerHTML=products.map(p=>`<article class="product"><img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'"><div class="product-info"><h3>${p.name}</h3><p>${p.desc}</p><div class="price">${rupees(p.price)}</div><button class="btn" onclick="addToCart(${p.id})">ADD TO BAG</button></div></article>`).join("");}
-function addToCart(id){cart[id]=(cart[id]||0)+1;updateCart();document.getElementById("cartCount").textContent=Object.values(cart).reduce((a,b)=>a+b,0);}
-function updateCart(){const entries=Object.entries(cart).filter(([id,q])=>q>0);const el=document.getElementById("cartItems");if(!entries.length){el.innerHTML='<div class="empty">Your bag is empty. Add something you love from the collection.</div>';}else{el.innerHTML=entries.map(([id,q])=>{const p=products.find(x=>x.id===Number(id));return `<div class="cart-line"><div><strong>${p.name}</strong><div>${rupees(p.price)} each</div><div class="qty"><button onclick="changeQty(${id},-1)">−</button><span>${q}</span><button onclick="changeQty(${id},1)">+</button></div></div><strong>${rupees(p.price*q)}</strong></div>`}).join("");}document.getElementById("cartTotal").textContent=rupees(entries.reduce((sum,[id,q])=>sum+products.find(p=>p.id===Number(id)).price*q,0));document.getElementById("cartCount").textContent=entries.reduce((a,[id,q])=>a+q,0);}
-function changeQty(id,delta){cart[id]=(cart[id]||0)+delta;if(cart[id]<=0)delete cart[id];updateCart();}
-function openCart(){document.getElementById("overlay").classList.add("show");updateCart();}function closeCart(){document.getElementById("overlay").classList.remove("show");}function outsideClose(e){if(e.target.id==="overlay")closeCart();}
-function makeOrderMessage(){const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("customerPhone").value.trim(),address=document.getElementById("customerAddress").value.trim(),note=document.getElementById("customerNote").value.trim();const lines=Object.entries(cart).filter(([id,q])=>q>0).map(([id,q])=>{const p=products.find(x=>x.id===Number(id));return `• ${p.name} x ${q} = ${rupees(p.price*q)}`});const total=Object.entries(cart).reduce((s,[id,q])=>s+products.find(p=>p.id===Number(id)).price*q,0);return `Hello Shah Jewellery! I would like to place an order:\n\n${lines.join("\n")}\n\nTotal (excluding delivery): ${rupees(total)}\n\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\nExtra note: ${note||"None"}\n\nPlease confirm availability, delivery charges and payment details.`;}
-function validWhatsApp(){if(WHATSAPP_NUMBER.includes("X")){alert("Website setup almost complete! Add your WhatsApp number in index.html first: find WHATSAPP_NUMBER and replace 91XXXXXXXXXX with your number.");return false;}return true;}
-function checkoutWhatsApp(e){e.preventDefault();if(!Object.keys(cart).length){alert("Please add a product to your bag first.");return;}if(!validWhatsApp())return;window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(makeOrderMessage()),"_blank");}
-function contactWhatsApp(){if(!validWhatsApp())return;window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent("Hello Shah Jewellery! I have a question about your products."),"_blank");}
-document.getElementById("year").textContent=new Date().getFullYear();renderProducts();updateCart();
+function order(product, price) {
+  const phone = "91XXXXXXXXXX";
+  const message = price === ""
+    ? "Hello Shah Jewellery! I would like to know more about your collection."
+    : "Hello Shah Jewellery! I want to order " + product +
+      " (₹" + price + "). Please share the ordering details.";
+  window.open("https://wa.me/" + phone + "?text=" +
+    encodeURIComponent(message), "_blank");
+}
 </script>
+
 </body>
 </html>
